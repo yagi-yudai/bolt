@@ -1,11 +1,16 @@
 @charset "utf-8";
 
-.inner {
-  display: inline-block;
-  width: 1100px;
+.font {
+  font-family: 'Raleway', sans-serif;
 }
 
 .center {
+  text-align: center;
+}
+
+.inner {
+  display: inline-block;
+  width: 1100px;
   text-align: center;
 }
 
@@ -16,6 +21,7 @@
   transform: translate(-50%);
   width: 100%;
   z-index: 99;
+  top: 0;
 }
 
 .header-inner {
@@ -27,32 +33,39 @@
   font-size: 40px;
 }
 
-.header-button {
-  color: #fff;
+.header-inner-button {
   float: right;
 }
 
-.header-button:hover {
-  transition: all 0.3s;
+.button {
+  color: #fff;
+  transition: color 0.3s linear;
+  display: inline-block;
+}
+
+.button:hover {
+  transition: color 0.3s linear;
   color: #333;
 }
 
-.header-button-text {
+.button-text {
   background: #74cfae;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
   vertical-align: middle;
   padding: 14px 12px;
+  box-sizing: border-box;
 }
 
 .title {
+  padding-top: 70px;
   background: #f2f2f2;
   width: 100%;
 }
 
 .title-inner {
-  padding: 320px 0 250px 0;
+  padding: 250px 0;
 }
 
 .title-text{
@@ -63,7 +76,7 @@
 
 .title-subtext {
   color: 	#9b8a8a;
-  margin: 20px 0 0 0;
+  margin-top: 20px;
 }
 
 .whatwecando {
@@ -73,19 +86,27 @@
 }
 
 .whatwecando-inner {
-  padding: 50px 0 0 0;
+  padding-top: 50px;
+}
+
+.whatwecando-img-box　{
+  display: inline-block;
+  float: left;
 }
 
 .whatwecando-img {
   float: left;
-  padding: 0 0 0 150px;
+  padding-left: 150px;
   width: 150px;
+}
+
+.whatwecando-text-box {
+  display: inline-block;
 }
 
 .whatwecando-text {
   color: #fff;
   font-size: 24px;
-  margin: 0 0 0 485px;
 }
 
 .whatwecando-subtextbox {
@@ -95,7 +116,7 @@
 .whatwecando-subtext {
   color: #fff;
   line-height: 20px;
-  margin: 35px 0 0 485px;
+  margin-top: 35px;
 }
 
 .ourlatestwork {
@@ -109,7 +130,7 @@
 .ourlatestwork-textbox {
   font-size: 24px;
   color: #333;
-  margin: 0 0 40px 0;
+  margin-bottom: 40px;
 }
 .ourlatestwork-text {
   font-size: 24px;
@@ -117,30 +138,34 @@
 
 .ourlatestwork-imgbox {
   font-size: 0;
-  margin: 0 0 90px 0;
+  margin-bottom: 90px ;
+  display: inline-block;
 }
 
 .ourlatest-img:first-child{ 
-  margin: 0 0 80px 0;
+  margin: 0;
 }
 
 .ourlatest-img {
   cursor: pointer;
   opacity: 0.7;
-  margin: 0 0 80px 100px;
-}
-
-.ourlatest-img:hover {
-  transition: all 0.3s;
-  opacity: 1;
+  transition: opacity 0.3s;
+  margin-left: 100px;
+  float: left;
 }
 
 .ourlatest-img:nth-child(n+4) {
-  margin: 0 0 0 100px;
+  margin: 0;
+  margin: 80px 100px 0 0;
 }
 
-.ourlatest-img:nth-child(5) {
-  margin: 0;
+.ourlatest-img:last-child {
+  margin-right: 0;
+}
+
+.ourlatest-img:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .ourlatestwork-footer-textbox {
@@ -150,30 +175,11 @@
 .ourlatestwork-footer-text {
   font-size: 12px;
   line-height: 20px;
-  margin: 0 90px 0 0;
+  margin-right: 90px;
 }
 
-.ourlatestwork-button-textbox {
-  color: #fff;
-  cursor: pointer;
-  background-color: #74cfae;
-  display: inline-block;
-  padding: 14px 20px;
+.email-button {
   vertical-align: top;
-}
-
-.ourlatestwork-button-text {
-  font-size: 12px;
-}
-
-.ourlatestwork-button-textbox:hover {
-  color: #333;
-  transition: all 0.3s;
-}
-
-.header-button-text {
-  font-size: 12px;
-  padding: 14px 20px;
 }
 
 .ourskills {
@@ -185,35 +191,29 @@
   padding: 70px 0 100px 0;
 }
 
+.ourskills-box {
+  display: inline-block;
+}
+
 .ourskills-title-text {
   color: #f2f2f2;
   font-size: 24px;
 }
 
-.ourskills-table {
-  display: inline-block;
-  margin: 70px 0 0 0;
-}
-
-.ourskills-table tr td:first-child {
-  padding: 0 0 0 40px;
-}
-
-.ourskills-img {
-  padding: 0 180px 0 0;
-}
-
 .ourskills-img-textbox {
+  float: left;
+  margin-left: 180px;
   display: inline-block;
-  padding: 0 0 100px 0;
-  text-align: center;
+}
+
+.ourskills-img-textbox:first-child {
+  margin: 0;
 }
 
 .ourskills-text {
   color: #f2f2f2;
-  display: inline-block;
   font-size: 16px;
-  padding: 10px 180px 0 0;
+  padding-top: 20px;
 }
 
 .sns {
@@ -221,7 +221,7 @@
 }
 
 .sns-inner {
-  padding: 200px 0 200px 0;
+  padding: 200px 0;
 }
 
 .sns-icon {
@@ -230,10 +230,12 @@
   font-size: 40px;
   padding: 20px 0;
   width: 185px;
+  background: #f2f2f2;
+  transition: background 0.3s linear;
 }
 
 .sns-icon:hover {
-  transition: all 0.3s;
+  transition: background 0.3s linear;
   background: #fff;
 }
 
@@ -252,4 +254,5 @@ footer {
 
 .footer-text {
   color: #fff;
+  font-size: 10px;
 }
