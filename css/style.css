@@ -77,8 +77,9 @@
 }
 
 .title-subtext {
-  color: 	#9b8a8a;
+  color: 	#c0c0c0;
   margin-top: 20px;
+  font-size: 30px;
 }
 
 .whatwecando {
@@ -88,11 +89,11 @@
 
 .whatwecando-inner {
   padding-top: 50px;
+  text-align: end;
 }
 
 .whatwecando-img-box {
-  display: inline-block;
-  padding-left: 150px;
+  display: inline-block;;
 }
 .whatwecando-img {
   width: 150px;
@@ -101,7 +102,8 @@
 .whatwecando-text-box {
   display: inline-block;
   vertical-align: top;
-  margin-left: 150px;
+  margin-left: 170px;
+  text-align: center;
 }
 
 .whatwecando-text {
@@ -143,15 +145,19 @@
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.3s;
-  margin-right: 80px;
+  margin-left: 100px;
   float: left;
 }
 
-.ourlatest-img:nth-child(3n) {
-  margin-right: 0;
+.ourlatest-img:first-child {
+  margin-left: 0;
+}
+
+.ourlatest-img:nth-child(3n+1) {
+  margin-left: 0;
 }
 .ourlatest-img:nth-child(n+4) {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 
@@ -166,13 +172,18 @@
 }
 
 .ourlatestwork-footer-text {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 20px;
+  color: #333;
+  line-height: 30px;
   margin-right: 90px;
 }
 
 .email-button {
   vertical-align: top;
+}
+
+.email-text {
+  padding: 14px 20px;
 }
 
 .ourskills {
