@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.body {
+body {
   font-family: Lato;
 }
 
@@ -46,7 +46,6 @@
 }
 
 .button:hover {
-  transition: color 0.3s linear;
   color: #333;
 }
 
@@ -57,14 +56,10 @@
   font-size: 12px;
   vertical-align: middle;
   padding: 14px 12px;
-  box-sizing: border-box;
 }
 
 .main {
   width: 100%;
-}
-
-.title {
   padding-top: 70px;
   background: #f2f2f2;
 }
@@ -107,6 +102,7 @@
   vertical-align: top;
   margin-left: 100px;
   text-align: center;
+  width: 670px;
 }
 
 .whatwecando-text {
@@ -130,12 +126,9 @@
   padding: 60px 0 70px 0;
 }
 
-.ourlatestwork-textbox {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 40px;
-}
 .ourlatestwork-text {
+  margin-bottom: 40px;
+  color: #333;
   font-size: 24px;
 }
 
@@ -168,11 +161,11 @@
 
 .ourlatest-img:hover {
   opacity: 1;
-  transition: opacity 0.3s;
 }
 
 .ourlatestwork-footer-textbox {
   display: inline-block;
+  width: 670px;
 }
 
 .ourlatestwork-footer-text {
@@ -206,10 +199,10 @@
 .ourskills-title-text {
   color: #f2f2f2;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .ourskills-img-textbox {
-  float: left;
   margin-left: 180px;
   display: inline-block;
 }
@@ -221,7 +214,7 @@
 .ourskills-text {
   color: #f2f2f2;
   font-size: 16px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .sns {
@@ -235,16 +228,18 @@
 
 .sns-icon {
   color: #74cfae;
+  width: 185px;
+}
+
+.sns-button {
   cursor: pointer;
   font-size: 40px;
   padding: 20px 0;
-  width: 185px;
   background: #f2f2f2;
   transition: background 0.3s linear;
 }
 
-.sns-icon:hover {
-  transition: background 0.3s linear;
+.sns-button:hover {
   background: #fff;
 }
 
@@ -254,14 +249,12 @@ footer {
 }
 
 .footer-inner {
-  padding: 20px 25px 25px 0;
+  padding: 20px 0 25px 0;
 }
 
-.footer-textbox {
-  float: right;
-}
 
 .footer-text {
+  text-align: end;
   color: #fff;
   font-size: 10px;
 }
