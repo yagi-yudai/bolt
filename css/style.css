@@ -30,13 +30,14 @@ body {
   padding:15px 0;
 }
 
-.header-bolt {  
-  float: left;
-  font-size: 40px;
-}
 
 .header-inner-button {
   float: right;
+}
+
+.header-bolt {  
+  float: left;
+  font-size: 40px;
 }
 
 .button {
@@ -95,6 +96,7 @@ body {
 }
 .whatwecando-img {
   width: 150px;
+  vertical-align: bottom;
 }
 
 .whatwecando-text-box {
@@ -138,7 +140,7 @@ body {
   display: inline-block;
 }
 
-.ourlatest-img {
+.ourlatest-img-button {
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.3s;
@@ -146,20 +148,24 @@ body {
   float: left;
 }
 
-.ourlatest-img:first-child {
+.ourlatestwork-img {
+  vertical-align: bottom;  
+}
+
+.ourlatest-img-button:first-child {
   margin-left: 0;
 }
 
-.ourlatest-img:nth-child(3n+1) {
+.ourlatest-img-button:nth-child(3n+1) {
   margin-left: 0;
 }
-.ourlatest-img:nth-child(n+4) {
+.ourlatest-img-button:nth-child(n+4) {
   margin-top: 80px;
 }
 
 
 
-.ourlatest-img:hover {
+.ourlatest-img-button:hover {
   opacity: 1;
 }
 
@@ -211,6 +217,10 @@ body {
   margin: 0;
 }
 
+.ourskills-img {
+  vertical-align: bottom;
+}
+
 .ourskills-text {
   color: #f2f2f2;
   font-size: 16px;
@@ -256,5 +266,4 @@ footer {
 .footer-text {
   text-align: end;
   color: #fff;
-  font-size: 10px;
 }
