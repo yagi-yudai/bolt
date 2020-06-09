@@ -99,6 +99,7 @@ body {
 .whatwecando-img-box {
   display: inline-block;;
 }
+
 .whatwecando-img {
   width: 150px;
 }
@@ -123,7 +124,6 @@ body {
   margin-top: 35px;
   font-size: 20px;
 }
-
 
 .ourlatestwork {
   background: #f2f2f2; 
@@ -277,7 +277,7 @@ footer {
 
   .whatwecando-text-box {
     width: 670px;
-    margin: 0 0 0 100px;
+    margin-left:100px;
   }
 
   .ourlatestwork-imgbox {
@@ -320,27 +320,18 @@ footer {
 }
 
 @media screen and (min-width:768px) and ( max-width:1199px){
-  .inner {
-    max-width: 1199px;
-    min-width: 768px;
-  }
-
   .whatwecando-subtext {
     word-break: break-all;
   } 
 }
 
 @media screen and (max-width: 767px) {
-  .inner {
-    max-width: 767px;
-  }
-
   .header-button {
     position: relative;
     z-index: 1;
   }
 
-  .header-button-text:active {
+  .header-button-text {
     visibility: hidden;
   }
   
@@ -362,6 +353,7 @@ footer {
     background-color: #c0c0c0;
     margin-bottom: 4px;
   }
+
   .hambargar-menu-icon:last-child {
     margin-bottom: 0;
   }
@@ -386,12 +378,8 @@ footer {
     padding: 50px 0;
   }
 
-  .sns-box{
-    display: inline-block;
-    width: 100%;
-  }
-
-  .sns-button {
+  .sns-box,
+  .sns-button{
     display: inline-block;
     width: 100%;
   }
