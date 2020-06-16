@@ -1,8 +1,12 @@
 @charset "utf-8";
-.clearfix::after{
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
+}
+
+.list {
+  display: inline-block;
 }
 
 img {
@@ -10,6 +14,7 @@ img {
 }
 
 .inner {
+  width: 1100px;
   margin: auto;
   text-align: center;
 }
@@ -60,7 +65,6 @@ body {
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
-  vertical-align: middle;
   padding: 14px 12px;
 }
 
@@ -74,7 +78,7 @@ body {
   padding: 250px 0;
 }
 
-.title-text{
+.title-text {
   font-size: 90px;
   color: #74cfae;
   font-weight: 700;
@@ -93,24 +97,19 @@ body {
 
 .whatwecando-inner {
   padding-top: 50px;
-  text-align: center;
+  text-align: end;
 }
 
 .whatwecando-img-box {
   display: inline-block;;
 }
 
-.whatwecando-img {
-  width: 150px;
-}
-
 .whatwecando-text-box {
+  width: 670px;
+  margin-left:100px;
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  width: 100%;
-  padding-bottom: 25px;
-  margin-top: 20px;
 }
 
 .whatwecando-text {
@@ -135,15 +134,19 @@ body {
 }
 
 .ourlatestwork-text {
-  margin-bottom: 40px;
   color: #333;
   font-size: 24px;
 }
 
 .ourlatestwork-imgbox {
+  margin-top: 40px;
   font-size: 0;
   display: inline-block;
-  width: 300px;
+  width: 100%;
+}
+
+.ourlatestwork-list {
+  margin-left: 100px;
 }
 
 .ourlatest-img-button {
@@ -154,26 +157,30 @@ body {
   text-align: center;
 }
 
-.ourlatest-img-button:nth-child(3n+1) {
+.ourlatestwork-list:nth-child(n+4) {
   margin-top: 80px;
 }
 
-.ourlatest-img-button:first-child {
-  margin-top: 0;
+.ourlatestwork-list:nth-child(3n+1) {
+  margin-left: 0;
 }
 
-.ourlatestwork-img {
-  vertical-align: bottom;  
+.ourlatestwork-list:first-child {
+  margin: 0;
 }
 
 .ourlatest-img-button:hover {
   opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.ourlatestwork-footer {
+  margin-top: 90px;
 }
 
 .ourlatestwork-footer-textbox {
   display: inline-block;
-  width: 100%;
-  margin-top: 80px;
+  width: 670px;
 }
 
 .ourlatestwork-footer-text {
@@ -182,13 +189,13 @@ body {
   line-height: 30px;
 }
 
-.email-button {
-  vertical-align: top;
+.email-text{
+  padding: 14px 20px;
 }
 
-.email-text {
-  padding: 14px 20px;
-  margin-top: 40px;
+.email-button {
+  margin-left: 90px;
+  vertical-align: top;
 }
 
 .ourskills {
@@ -200,23 +207,21 @@ body {
   padding: 70px 0 100px 0;
 }
 
-.ourskills-box {
-  display: inline-block;
-  width: 122px;
-}
-
 .ourskills-title-text {
   color: #f2f2f2;
   font-size: 24px;
-  margin-bottom: 20px;
 }
 
-.ourskills-img-textbox {
-  margin-top: 88px;
+.ourskills-box {
+  margin-top: 20px;
+}
+
+.ourskills-list {
+  margin-left: 180px;
   display: inline-block;
 }
 
-.ourskills-img-textbox:first-child {
+.ourskills-list:first-child {
   margin: 0;
 }
 
@@ -238,18 +243,24 @@ body {
 .sns-icon {
   color: #74cfae;
   width: 185px;
-  padding: 30px 0;
-  background: #f2f2f2;
   transition: background 0.3s linear;
 }
 
-.sns-button {
-  cursor: pointer;
-  font-size: 40px;
+.sns-list {
+  display: inline-block;
 }
 
-.sns-icon:hover {
+.sns-button {
+  display: inline-block;
+  padding: 30px 0;
+  cursor: pointer;
+  font-size: 40px;
+  transition: background 0.3s linear;
+}
+
+.sns-button:hover {
   background: #fff;
+  transition: background 0.3s linear;
 }
 
 footer {
@@ -266,81 +277,103 @@ footer {
   color: #fff;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width:1199px) {
   .inner {
-    width: 1100px;
+    width: 97%;
   }
-
+  
   .whatwecando-inner {
-    text-align: end;
+    text-align: center;
+    padding-bottom: 25px;
   }
-
+  
   .whatwecando-text-box {
-    width: 670px;
-    margin-left:100px;
-  }
-
-  .ourlatestwork-imgbox {
     width: 100%;
-    margin-bottom: 90px ;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  
+  .whatwecando-subtext {
+    word-break: break-all;
+  }
+  
+  .ourskills-img-textbox {
+    display: block;
+  }
+  
+  .ourlatestwork-imgbox {
+    width: 300px;
   }
 
-  .ourlatest-img-button {
-    margin-left: 100px;
-  }
-
-  .ourlatest-img-button:nth-child(3n+1) {
+  .ourlatestwork-list {
     margin-left: 0;
   }
-
-  .ourlatest-img-button:nth-child(n+4) {
+  
+  .ourlatestwork-list:nth-child(n+4) {
+    margin-top: 0;
+  }
+  
+  .ourlatestwork-list:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+  
+  .ourlatestwork-list:first-child {
+    margin-top: 0;
+  }
+  
+  .ourlatestwork-img {
+    vertical-align: bottom;  
+  }
+  
+  .ourlatest-img-button:hover {
+    opacity: 1;
+  }
+  
+  .ourlatestwork-footer {
     margin-top: 80px;
   }
 
   .ourlatestwork-footer-textbox {
-    width: 670px;
-    margin-top: 0;
-  }
-
-  .ourlatestwork-footer-text {
-    margin-right: 90px;
-  }
-
-  .email-text {
-    margin-top: 0;
-  }
-
-  .ourskills-box {
+    display: inline-block;
     width: 100%;
   }
 
-  .ourskills-img-textbox {
-    margin-left:180px;
+  .email-button {
+    margin-left: 0;
+  }
+  
+  .email-text {
+    padding: 14px 20px;
+    margin-top: 40px;
+  }
+
+  .ourskills-list {
+    margin-top: 88px;
+    margin-left: 0;
+  }
+
+  .ourskills-box {
+    width: 122px;
+    display: inline-block;
   }
 }
 
-@media screen and (min-width:768px) and ( max-width:1199px){
-  .whatwecando-subtext {
-    word-break: break-all;
-  } 
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {  
   .header-button {
     position: relative;
     z-index: 1;
   }
-
+  
   .header-button-text {
     visibility: hidden;
   }
   
-  .hambargar-menu-box{
+  .hambargar-menu-box {
     display: inline-block;
     position: absolute;
     right: 10px;
   }
-
+  
   .hambargar-menu-box {
     padding: 10px;
     border: 1px solid #ddd;
@@ -353,11 +386,11 @@ footer {
     background-color: #c0c0c0;
     margin-bottom: 4px;
   }
-
+  
   .hambargar-menu-icon:last-child {
     margin-bottom: 0;
   }
-
+  
   .title-inner {
     padding: 160px 0 130px 0;
   }
@@ -369,22 +402,16 @@ footer {
   .title-subtext {
     margin-top: 20px;
   }
-
+  
   .whatwecando-subtext {
     word-break: break-all;
   }
-
+  
   .sns-inner {
     padding: 50px 0;
   }
-
-  .sns-box,
-  .sns-button{
-    display: inline-block;
-    width: 100%;
-  }
-
-  .sns-icon {
+  
+  .sns-list {
     width: 100%;
   }
 }

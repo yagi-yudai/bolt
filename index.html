@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-description" content="telephone=no">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <meta name="keyword-detction" content="bolt, bootstrap, portfolio">
+    <meta name="keyword-description" content="bolt, bootstrap, portfolio">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -20,9 +20,9 @@
           <a class="header-button-text">Contact</a>
         </div>
         <div class="hambargar-menu-box">
-          <div class="hambargar-menu-icon"></div>
-          <div class="hambargar-menu-icon"></div>
-          <div class="hambargar-menu-icon"></div>
+          <span class="hambargar-menu-icon"></span>
+          <span class="hambargar-menu-icon"></span>
+          <span class="hambargar-menu-icon"></span>
         </div>
       </div>  
     </header>
@@ -35,7 +35,7 @@
     <section class="whatwecando">
       <div class="inner whatwecando-inner">
           <div class="whatwecando-img-box">
-            <img class="whatwecando-img" src="img/iphone.png">
+            <img class="whatwecando-img" src="img/iphone.png" alt="これはiPhoneの画像です">
           </div>
           <div class="whatwecando-text-box">
             <h2 class="whatwecando-text font-specification">WHAT WE CAN DO?</h2>
@@ -51,26 +51,38 @@
     <article class="ourlatestwork">
       <div class="inner ourlatestwork-inner">
         <h2 class="ourlatestwork-text font-specification">OUR LATEST WORK</h2>
-        <div class="ourlatestwork-imgbox clearfix">
-          <a class="ourlatest-img-button">
-            <img class="ourlatestwork-img" src="img/01.jpg"   alt="これはourlatestの画像です。">
-          </a>
-          <a  class="ourlatest-img-button">
-            <img class="ourlatestwork-img" src="img/02.jpg"   alt="これはourlatestの画像です。">     
-          </a>
-          <a class="ourlatest-img-button">
-            <img class="ourlatestwork-img" src="img/03.jpg"   alt="これはourlatestの画像です。">    
-          </a>
-          <a class="ourlatest-img-button" >
-            <img class="ourlatestwork-img" src="img/04.jpg"   alt="これはourlatestの画像です。">     
-          </a>
-          <a class="ourlatest-img-button">
-            <img class="ourlatestwork-img" src="img/05.jpg"   alt="これはourlatestの画像です。">     
-          </a>
-          <a class="ourlatest-img-button">
-            <img class="ourlatestwork-img" src="img/06.jpg"   alt="これはourlatestの画像です。">    
-          </a>
-        </div>
+        <ul class="ourlatestwork-imgbox clearfix">
+          <li class="list ourlatestwork-list">
+            <a class="ourlatest-img-button">
+              <img class="ourlatestwork-img" src="img/01.jpg" alt="これはourlatestの画像です。">
+            </a>
+          </li>
+          <li class="list ourlatestwork-list">
+            <a class="ourlatest-img-button">
+              <img class="ourlatestwork-img" src="img/02.jpg" alt="これはourlatestの画像です。">     
+            </a>
+          </li>
+          <li class="list ourlatestwork-list">
+            <a class="ourlatest-img-button">
+              <img class="ourlatestwork-img" src="img/03.jpg" alt="これはourlatestの画像です。">    
+            </a>
+          </li>
+          <li class="list ourlatestwork-list ">
+            <a class="ourlatest-img-button" >
+              <img class="ourlatestwork-img" src="img/04.jpg" alt="これはourlatestの画像です。">     
+            </a>
+          </li>
+          <li class="list ourlatestwork-list ">
+            <a class="ourlatest-img-button">
+              <img class="ourlatestwork-img" src="img/05.jpg" alt="これはourlatestの画像です。">     
+            </a>
+          </li>
+          <li class="list ourlatestwork-list">
+            <a class="ourlatest-img-button">
+              <img class="ourlatestwork-img" src="img/06.jpg" alt="これはourlatestの画像です。">    
+            </a>
+          </li>
+        </ul>
         <div class="ourlatestwork-footer">
           <div class="ourlatestwork-footer-textbox">
             <p class="ourlatestwork-footer-text">
@@ -88,42 +100,58 @@
     <section class="ourskills">
       <div class="inner ourskills-inner">
         <h2 class="ourskills-title-text font-specification">OUR SKILLS</h2>
-        <div class="ourskills-box">
-          <div class="ourskills-img-textbox">
-            <img class="ourskills-img" src="img/circle_01.png" alt="これはourskillsの画像です。">
-            <p class="ourskills-text">JavaScript</p>
-          </div>
-          <div class="ourskills-img-textbox">
-            <img class="ourskills-img" src="img/circle_02.png" alt="これはourskillsの画像です。">
-            <p class="ourskills-text">Bootstrap</p>
-          </div>
-          <div class="ourskills-img-textbox">
-            <img class="ourskills-img" src="img/circle_03.png" alt="これはourskillsの画像です。">
-            <p class="ourskills-text">WordPress</p>
-          </div>
-          <div class="ourskills-img-textbox">
-            <img class="ourskills-img" src="img/circle_04.png" alt="これはourskillsの画像です。">
-            <p class="ourskills-text">Photoshop</p>
-          </div>
-        </div>
+        <ul class="ourskills-box">
+          <li class="list ourskills-list">
+            <div class="ourskills-img-textbox list">
+              <img class="ourskills-img" src="img/circle_01.png" alt="これはourskillsの画像です。">
+              <p class="ourskills-text">JavaScript</p>
+            </div>
+          </li>
+          <li class="list ourskills-list">
+            <div class="ourskills-img-textbox">
+              <img class="ourskills-img" src="img/circle_02.png" alt="これはourskillsの画像です。">
+              <p class="ourskills-text">Bootstrap</p>
+            </div>
+          </li>
+          <li class="list ourskills-list">
+            <div class="ourskills-img-textbox">
+              <img class="ourskills-img" src="img/circle_03.png" alt="これはourskillsの画像です。">
+              <p class="ourskills-text">WordPress</p>
+            </div>
+          </li>
+          <li class="list ourskills-list">
+            <div class="ourskills-img-textbox">
+              <img class="ourskills-img" src="img/circle_04.png" alt="これはourskillsの画像です。">
+              <p class="ourskills-text">Photoshop</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <nav class="sns">
       <div class="inner sns-inner">
-        <div class="sns-box">
-          <a class="sns-button">
-            <i class="fab fa-facebook-f sns-icon"></i>
-          </a>
-          <a class="sns-button">
-            <i class="fab fa-dribbble sns-icon"></i>
-          </a>
-          <a  class="sns-button">
-            <i class="fab fa-twitter sns-icon"></i>
-          </a>
-          <a class="sns-button">
-            <i class="fas fa-envelope sns-icon"></i>
-          </a>
-        </div>
+        <ul class="sns-box">
+          <li class="sns-list">
+            <a class="sns-button">
+              <i class="fab fa-facebook-f sns-icon"></i>
+            </a>
+          </li>
+          <li class="sns-list">
+            <a class="sns-button">
+              <i class="fab fa-dribbble sns-icon"></i>
+            </a>
+          </li>
+          <li class="sns-list">
+            <a  class="sns-button">
+              <i class="fab fa-twitter sns-icon"></i>
+            </a>
+          </li>
+          <li class="sns-list">
+            <a class="sns-button">
+              <i class="fas fa-envelope sns-icon"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
     <footer class="footer">
