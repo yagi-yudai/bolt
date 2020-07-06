@@ -1,8 +1,13 @@
 @charset "utf-8";
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
+}
+
+.a {
+  display: inline-block;
 }
 
 .list {
@@ -30,8 +35,10 @@ body {
 .header {
   background: #fff;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 100;
 }
 
 .header-inner {
@@ -147,13 +154,13 @@ body {
 
 .ourlatestwork-list {
   margin-left: 100px;
+  float: left;
 }
 
 .ourlatest-img-button {
   cursor: pointer;
   opacity: 0.7;
-  transition: opacity 0.3s;
-  float: left;
+  transition:  0.3s;
   text-align: center;
 }
 
@@ -171,7 +178,7 @@ body {
 
 .ourlatest-img-button:hover {
   opacity: 1;
-  transition: opacity 0.3s;
+  transition:  0.3s;
 }
 
 .ourlatestwork-footer {
@@ -240,25 +247,29 @@ body {
   padding: 200px 0;
 }
 
+.sns-box {
+  font-size: 0;
+}
+
 .sns-icon {
   color: #74cfae;
-  width: 185px;
   transition: background 0.3s linear;
 }
 
 .sns-list {
+  width: 185px;
   display: inline-block;
+  transition: background 0.3s linear;
+  padding: 30px 0;
 }
 
 .sns-button {
-  display: inline-block;
-  padding: 30px 0;
+  width: 100%;
   cursor: pointer;
   font-size: 40px;
-  transition: background 0.3s linear;
 }
 
-.sns-button:hover {
+.sns-list:hover {
   background: #fff;
   transition: background 0.3s linear;
 }
@@ -340,11 +351,11 @@ footer {
 
   .email-button {
     margin-left: 0;
+    margin-top: 40px;
   }
   
   .email-text {
     padding: 14px 20px;
-    margin-top: 40px;
   }
 
   .ourskills-list {
@@ -356,6 +367,10 @@ footer {
     width: 122px;
     display: inline-block;
   }
+
+  .sns-list {
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 767px) {  
@@ -365,29 +380,30 @@ footer {
   }
   
   .header-button-text {
-    visibility: hidden;
+    display: none;
   }
   
-  .hambargar-menu-box {
+  .hamburger-menu-box {
     display: inline-block;
     position: absolute;
     right: 10px;
   }
   
-  .hambargar-menu-box {
+  .hamburger-menu-box {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
   }
 
-  .hambargar-menu-icon {
+  .hamburger-menu-icon {
+    display: block;
     width: 20px;
     height: 2px;
     background-color: #c0c0c0;
     margin-bottom: 4px;
   }
   
-  .hambargar-menu-icon:last-child {
+  .hamburger-menu-icon:last-child {
     margin-bottom: 0;
   }
   
@@ -406,7 +422,7 @@ footer {
   .whatwecando-subtext {
     word-break: break-all;
   }
-  
+
   .sns-inner {
     padding: 50px 0;
   }
