@@ -6,11 +6,9 @@
   clear: both;
 }
 
-.a {
-  display: inline-block;
-}
-
-.list {
+a {
+  cursor: pointer;
+  font-size: 0;
   display: inline-block;
 }
 
@@ -54,25 +52,24 @@ body {
   font-size: 40px;
 }
 
-.button,
-.header-button {
+.button {
   color: #fff;
   transition: color 0.3s linear;
   display: inline-block;
 }
 
-.button:hover,
-.header-button:hover {
+.button:hover {
   color: #333;
 }
 
-.button-text,
-.header-button-text {
+.button-text {
   background: #74cfae;
-  cursor: pointer;
-  display: inline-block;
   font-size: 12px;
   padding: 14px 12px;
+}
+
+.hamburger-menu-box {
+  display: none;
 }
 
 .main {
@@ -158,12 +155,14 @@ body {
 }
 
 .ourlatest-img-button {
-  cursor: pointer;
   opacity: 0.7;
   transition:  0.3s;
   text-align: center;
 }
 
+.ourlatest-img-button:hover {
+  opacity: 1;
+}
 .ourlatestwork-list:nth-child(n+4) {
   margin-top: 80px;
 }
@@ -172,14 +171,6 @@ body {
   margin-left: 0;
 }
 
-.ourlatestwork-list:first-child {
-  margin: 0;
-}
-
-.ourlatest-img-button:hover {
-  opacity: 1;
-  transition:  0.3s;
-}
 
 .ourlatestwork-footer {
   margin-top: 90px;
@@ -224,7 +215,7 @@ body {
 }
 
 .ourskills-list {
-  margin-left: 180px;
+  margin-left:180px;
   display: inline-block;
 }
 
@@ -253,23 +244,21 @@ body {
 
 .sns-icon {
   color: #74cfae;
-  transition: background 0.3s linear;
 }
 
 .sns-list {
   width: 185px;
   display: inline-block;
-  transition: background 0.3s linear;
-  padding: 30px 0;
 }
 
 .sns-button {
   width: 100%;
-  cursor: pointer;
   font-size: 40px;
+  padding: 30px 0;
+  transition: background 0.3s linear;
 }
 
-.sns-list:hover {
+.sns-button:hover {
   background: #fff;
   transition: background 0.3s linear;
 }
@@ -300,8 +289,7 @@ footer {
   
   .whatwecando-text-box {
     width: 100%;
-    margin-left: 0;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
   }
   
   .whatwecando-subtext {
@@ -336,10 +324,6 @@ footer {
     vertical-align: bottom;  
   }
   
-  .ourlatest-img-button:hover {
-    opacity: 1;
-  }
-  
   .ourlatestwork-footer {
     margin-top: 80px;
   }
@@ -350,17 +334,11 @@ footer {
   }
 
   .email-button {
-    margin-left: 0;
-    margin-top: 40px;
-  }
-  
-  .email-text {
-    padding: 14px 20px;
+    margin: 40px 0 0 0;
   }
 
   .ourskills-list {
-    margin-top: 88px;
-    margin-left: 0;
+    margin: 88px 0 0 0;
   }
 
   .ourskills-box {
@@ -375,11 +353,6 @@ footer {
 
 @media screen and (max-width: 767px) {  
   .header-button {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .header-button-text {
     display: none;
   }
   
@@ -387,9 +360,6 @@ footer {
     display: inline-block;
     position: absolute;
     right: 10px;
-  }
-  
-  .hamburger-menu-box {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -417,10 +387,6 @@ footer {
 
   .title-subtext {
     margin-top: 20px;
-  }
-  
-  .whatwecando-subtext {
-    word-break: break-all;
   }
 
   .sns-inner {
